@@ -1,0 +1,61 @@
+<div class="mteGrid">
+	{if $WARNING != ''}<div class="mteWarning">{$WARNING|nl2br}</div>{/if}
+	{if $NOTIFY != ''}<div class="mteNotify">{$NOTIFY|nl2br}</div>{/if}
+	<table border="1">
+		<thead>
+		{if $TITLE != ''}
+		<tr>
+			<th class="mteGridTitle" colspan="{$COLSPAN}">
+				{$TITLE}
+				{if $CLOSE != ''}<a href="{$CLOSE}" class="mteGridClose" title="{$CLOSETAG}"><span>{$CLOSETAG}</span></a>{/if}
+			</th>
+		</tr>
+		{/if}
+		<tr>
+		{foreach from=$COLS item=header}
+			{if $header.hidden != 1}
+				<th>{if $header.orderurl != ''}
+					<a href="{$header.orderurl}" {if $header.orderactive == 1}class ="mteGridTitleOrder{$header.orderdir}"{/if}>{$header.title}</a>{else}{$header.title}{/if}
+				</th>
+			{/if}
+		{/foreach}
+		</tr>
+		</thead>
+		<tbody>
+		{foreach from=$DATA item=thisLine}
+		<tr>
+			{foreach from=$COLS key=counter item=thisColumn}
+                {if $thisColumn.hidden != 1 && $thisColumn.title != '&nbsp;'}
+                	{if $thisColumn.type == 'I'}
+                	<td class="X">{if $thisLine[$thisColumn.name] != ''}<img src="{$thisLine[$thisColumn.name]}">{else}&nbsp;{/if}</td>
+                	{else}
+					<td class="{$thisColumn.type|capitalize}">
+						{if $thisColumn.type == "D"}
+						{$thisLine[$thisColumn.name]|date_format:$thisColumn.format}
+						{else}
+						{$thisLine[$thisColumn.name]|nl2br}
+						{/if}
+					</td>
+					{/if}
+				{else}
+                    {if ($ACTION == 1) && ($thisColumn.name == '_mteaction_')}
+					<td class="mteGridAction">
+                         {foreach from=$thisLine[$thisColumn.name] item=thisAction}
+							<a href="{$thisAction.url}" class="mteGridAction{$thisAction.css}"><span>{$thisAction.title}</span></a>
+					     {/foreach}
+					</td>
+					{/if}
+				{/if}
+			{/foreach}
+		</tr>
+		{/foreach}
+		</tbody>
+		{if $RECORDLEGEND != ''}
+		<tfoot>
+			<tr>
+				<td colspan="{$COLSPAN}"><div class="mteLegend">{$RECORDLEGEND}</div></td>
+			</tr>
+		</tfoot>
+		{/if}
+	</table>
+</div>

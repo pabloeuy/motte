@@ -1,0 +1,237 @@
+# translation of default.po to español
+# GBoksar // Perro <gustavo@boksar.info>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: default\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-09-09 10:00-0300\n"
+"Last-Translator: GBoksar / Perro <gustavo@boksar.info>\n"
+"Language-Team: español <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: motte/motte/utils/mysql2motte/mteTpl.mte:118
+msgid "error(s) found"
+msgstr "error(es) encontrado(s)"
+
+# Will be in all your classes in the "your_app/model" folder.
+#: motte/utils/mysql2motte/mteTpl.mte:191
+#: motte/utils/mysql2motte/mteTpl.mte:210
+#: motte/utils/mysql2motte/mteTpl.mte:226
+#: motte/utils/mysql2motte/mteTpl.mte:244
+#: motte/utils/mysql2motte/mteTpl.mte:259
+#: motte/utils/mysql2motte/mteTpl.mte:275
+#: motte/utils/mysql2motte/mteTpl.mte:291
+#: motte/utils/mysql2motte/mteTpl.mte:306
+msgid "Please verify"
+msgstr "Verifique por favor"
+
+# Will be in all your classes in the "your_app/model" folder.
+#: motte/utils/mysql2motte/mysql2motte.sh:368
+msgid "Field"
+msgstr "Campo"
+
+msgid "confirm"
+msgstr "confirma"
+
+#: mteConst.class.php:177
+msgid "new"
+msgstr "Nuevo"
+
+#: mteConst.class.php:180
+msgid "edit"
+msgstr "Modificar"
+
+#: mteConst.class.php:183
+msgid "delete"
+msgstr "Eliminar"
+
+#: mteConst.class.php:186
+msgid "view"
+msgstr "Ver"
+
+#: motte/utils/mysql2motte/mteTpl.mte:191
+msgid "while initializing data in"
+msgstr "al inicializar datos en"
+
+#: motte/utils/mysql2motte/mteTpl.mte:210
+msgid "when inserting new record in"
+msgstr "al agregar un nuevo registro en"
+
+#: motte/utils/mysql2motte/mteTpl.mte:226
+msgid "after inserting new record in"
+msgstr "despu&eacute;s de agregar un nuevo registro en"
+
+#: motte/utils/mysql2motte/mteTpl.mte:244
+msgid "when updating record data of"
+msgstr "al modificar un registro en"
+
+#: motte/utils/mysql2motte/mteTpl.mte:259
+msgid "after updating record data of"
+msgstr "despu&eacute;s de modificar un registro en"
+
+#: motte/utils/mysql2motte/mteTpl.mte:275
+msgid "when deleting a record of"
+msgstr "al eliminar un registro en"
+
+#: motte/utils/mysql2motte/mteTpl.mte:291
+msgid "after deleting a record of"
+msgstr "despu&eacute;s de eliminar un registro en"
+
+#: motte/utils/mysql2motte/mteTpl.mte:306
+msgid "on generating calculated fields for"
+msgstr "al generar campos calculados de"
+
+#: motte/utils/mysql2motte/mysql2motte.sh:326
+msgid "No data could be found for field"
+msgstr "No existen datos para el campo"
+
+#: motte/utils/mysql2motte/mysql2motte.sh:375
+msgid "must receive an integer value."
+msgstr "debe ser un valor num&eacute;rico entero."
+
+#: motte/utils/mysql2motte/mysql2motte.sh:372
+msgid "must receive a numeric value."
+msgstr "debe ser un valor num&eacute;rico."
+
+#: motte/utils/mysql2motte/mysql2motte.sh:378
+msgid "cannot be empty."
+msgstr "no puede estar vac&iacute;o"
+
+#: motte/model/mteTableSql.class.php:522
+msgid "INSERT - Not Enough Parameters"
+msgstr "INSERT - Par&aacute;metros insuficientes"
+
+#: motte/model/mteTableSql.class.php:563
+msgid "UPDATE - Not Enough Parameters"
+msgstr "UPDATE - Par&aacute;metros insuficientes"
+
+#: motte/model/mteTableSql.class.php:605
+msgid "DELETE - Not Enough Parameters"
+msgstr "DELETE - Par&aacute;metros insuficientes"
+
+msgid "Hello Motte!"
+msgstr "Hola Motte!"
+
+# Motte Grid and form labels
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Go"
+msgstr "Ir"
+
+msgid "First page"
+msgstr "Primera p&aacute;gina"
+
+msgid "Previuos page"
+msgstr "P&aacute;gina anterior"
+
+msgid "Next page"
+msgstr "P&aacute;gina siguiente"
+
+msgid "Last page"
+msgstr "&Uacute;ltima p&aacute;gina"
+
+msgid "Apply filter"
+msgstr "Aplicar filtro"
+
+msgid "Remove filter"
+msgstr "Quitar filtro"
+
+# --------------------------------------------------
+# INVALID URL Messages
+# --------------------------------------------------
+msgid "Database Connection Error"
+msgstr "Error de Conexi&oacute;n a la Base de Datos"
+
+msgid "Problems detected while Motte try to connect to database."
+msgstr "Motte ha detectado problemas al intentar conectarse a la base de datos."
+
+msgid "Either connection data provided are incorrect or database engine is down."
+msgstr "O bien los datos de conexi&oacute;n suministrados no son correctos o el motor de base de datos no está funcionando."
+
+msgid "Back"
+msgstr "Volver"
+
+# --------------------------------------------------
+# No DB Connection
+# --------------------------------------------------
+msgid "INVALID URL"
+msgstr "URL INVALIDO"
+
+msgid "Problems detected when decoding"
+msgstr "Se han detectado problemas al decodificar "
+
+msgid "Something happened when Motte decode received URL. Either the URL get lost in some point or someone tried to alter it and become compromised."
+msgstr "Algo ha sucedido cuando Motte intent&oacute; decodificar la URL recibida. La misma se ha corrompido en alg&uacute;n punto o bien alguien ha intentado alterarla y se ha visto comprometida."
+
+msgid "Motte <strong>has killed the active session</strong> for your security. If this problem persist, please contact your developer team."
+msgstr "Motte <strong>ha cerrado la sesi&oacute;n activa</strong> por su seguridad. Si el problema persiste le rogamos se ponga en contacto con su equipo de desarrollo."
+
+# ---------------------------------------------------
+# Standard Login Tags
+# ---------------------------------------------------
+msgid "Username:"
+msgstr "Usuario:"
+
+msgid "Password:"
+msgstr "Contrase&ntilde;a:"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "I've forgotten my password"
+msgstr "He olvidado mi contrase&ntilde;a"
+
+msgid "System Login"
+msgstr "Acceso al Sistema"
+
+# ---------------------------------------------------
+# Standard Login Tags                                                                                       # ---------------------------------------------------
+msgid "Motte Powered"
+msgstr "Realizado con Motte"
+
+# ---------------------------------------------------
+# Exceptions
+# ---------------------------------------------------
+msgid "Error creating log directory"
+msgstr "Error al intentar crear el directorio para log"
+
+msgid "Problems were detected when Motte try to create the log directory at"
+msgstr "Se han detectado problemas cuando Motte intent&oacute; crear el directorio para log en"
+
+msgid "Check your permissions over that directory or ask your system administrator for help."
+msgstr "Verifique los permisos en ese directorio o solicite ayuda al administrator de su sistema."
+
+msgid "If this problem persist, please contact your developer team."
+msgstr "Si el problema persiste, p&oacutengase en contacto con su equipo de desarrollo."
+
+msgid "Invalid User/Password"
+msgstr "Usuario y/o contrase&ntilde;a NO v&aacute;lidos"
+
+msgid "Both fields must be completed"
+msgstr "Ambos campos deben ser ingresados"
+
+msgid "Sorry, an error has occured during login process. Can't proceed"
+msgstr "Lo siento, ha ocurrido un error durnte el proceso de autenticaci&oacute;n"
+
+msgid "Searching..."
+msgstr "Buscando..."
+
+msgid "Attached file exceeded max size specified by application"
+msgstr "El archivo adjunto excede el m&aacute;ximo tama&ntilde;o permitido por la aplicaci&ooacute;n"
+
+msgid "An error occur while copying attached file to temporary directory"
+msgstr "Ha ocurrido un error al intentar copiar el archivo adjunto al directorio temporal"
+
+msgid "An error occur while moving file to target directory"
+msgstr "Ha ocurrido un error al querer mover el archivo subido al directorio destino"
+
+msgid "already exists a file with this name"
+msgstr "ya existe un archivo con ese nombre"
+
+msgid "Attached file exceeded allowed max upload size"
+msgstr "El archivo adjunto excede el m&aacute;ximo tama&ntilde;o permitido"
+

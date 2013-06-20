@@ -1,0 +1,104 @@
+/* mteBrowser ###########################  */
+div.mteGridNav{
+	margin: 0px auto; margin-top: 15px; margin-bottom: 12px;
+	clear: left;
+	width: 480px;
+	}
+div.mteGridNav legend{
+	display: none;
+	}
+div.mteGridNav label span{
+	display: none;
+	}
+div.mteGridNav ul{
+	list-style-type: none;
+	}
+div.mteGridNavActions{
+	float: left;
+	margin-right: 15px;
+	}
+div.mteGridNavActions a{
+	display: block;
+	float: left;
+	width: 16px; height: 16px;
+	margin-left: 2px; margin-right: 2px;
+	opacity:0.5; -moz-opacity:0.5; filter: alpha(opacity=50);
+	}
+div.mteGridNav a:hover{
+	opacity:1; -moz-opacity:1; filter: alpha(opacity=100);
+	}
+div.mteGridNav a span{
+	display: none;
+	}
+a.mteGridNavNuevo{
+	background: url(../img/ico_nuevo.gif) transparent no-repeat;
+	}
+a.mteGridNavFiltro{
+	background: url(../img/ico_buscar.gif) transparent no-repeat;
+	}
+a.mteGridNavFiltroQuitar{
+	background: url(../img/ico_filtro_quitar.gif) transparent no-repeat;
+	}
+a.mteGridNavPDF{
+	background: url(../img/ico_pdf.gif) transparent no-repeat;
+	}
+
+div.mteGridNavFilters input{
+	padding: 1px; padding-left: 2px;
+	width: 100px;
+	}
+div.mteGridNavFilters input, div.mteGridNavFilters select{
+	float: left;
+	margin-right: 4px;
+	border: 1px solid #bbb;
+	}
+label.mteGridNavSubmit input{
+	width: 17px;
+	border: none;
+	background: url(../img/ico_filtro.gif) transparent no-repeat;
+	cursor: pointer;
+	opacity:0.5; -moz-opacity:0.5; filter: alpha(opacity=50);
+	}
+label.mteGridNavSubmit input:hover{
+	opacity: 1; -moz-opacity: 1; filter: alpha(opacity=100);
+	}
+div.mteGridNavFilters a{
+	display: block;
+	float: left;
+	width: 17px; height: 16px;
+	border: none;
+	background: url(../img/ico_filtro_quitar.gif) transparent no-repeat;
+	opacity:0.5; -moz-opacity:0.5; filter: alpha(opacity=50);
+	}
+
+div.mteGridNavPages{
+	float: right;
+	margin-top: -17px;
+	width: 140px;
+	}
+div.mteGridNavPages input{
+	display: none;
+	}
+div.mteGridNavPages select{
+	float: left;
+	margin-right: 4px;
+	border: 1px solid #bbb;
+	}
+div.mteGridNavPages a{
+	float: left;
+	display: block;
+	width: 17px; height: 17px;
+	opacity:0.5; -moz-opacity:0.5; filter: alpha(opacity=50);
+	}
+a.mteGridNavPagesFirst{
+	background: url(../img/ico_primero.gif) transparent no-repeat;
+	}
+a.mteGridNavPagesPrev{
+	background: url(../img/ico_anterior.gif) transparent no-repeat;
+	}
+a.mteGridNavPagesNext{
+	background: url(../img/ico_siguiente.gif) transparent no-repeat;
+	}
+a.mteGridNavPagesLast{
+	background: url(../img/ico_ultimo.gif) transparent no-repeat;
+	}

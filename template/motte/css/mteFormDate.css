@@ -1,0 +1,81 @@
+div.mteFormDateSelect{
+	float: left;
+	}
+div.mteFormDateSelect select{
+	float: left;
+	}
+a.mteFormDateLink{
+	display: block;
+	float: left;
+	padding-left: 4px; padding-top: 2px;
+	width: 15px; height: 15px;
+	background: url(../img/ico_calendario.gif) no-repeat bottom;
+	}
+a.mteFormDateLink span{
+	display: none;
+	}
+div.mteFormDateContainer{
+	position: absolute;
+	margin-left: 258px; margin-top: 5px;
+	width: 150px;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	}
+div.mteFormDateContainerHidden{
+	display: none;
+	}
+div.mteFormDateContainer table{
+	width: 100%;
+	border-collapse: collapse;
+	}
+th.mteFormDateMonth{
+	height: 19px;
+	background-color: #eee;
+	font-weight: bold;
+	cursor: default;
+	}
+td.mteFormDateWeek{
+	padding-top: 1px; padding-bottom: 1px;
+	background-color: #ccc;
+	text-align: center;
+	cursor: default;
+	}
+td.mteFormDateDay{
+	border: 1px solid #bbb;
+	background-color: #eee;
+	text-align: center;
+	cursor: default;
+	}
+td.mteFormDateDay a{
+	display: block;
+	background-color: #fff
+	}
+td.mteFormDateDay a:hover{
+	background-color: #eff;
+	}
+a.mteDatePrev{
+	display: block;
+	float: left;
+	margin-left: 2px;
+	width: 15px; height: 15px;
+	background: url(../img/ico_anterior.gif) no-repeat bottom;
+	}
+a.mteDatePrev span{
+	display: none;
+	}
+a.mteDateProx{
+	display: block;
+	float: right; clear: left;
+	margin-top: -15px; margin-right: 2px;
+	width: 15px; height: 15px;
+	background: url(../img/ico_siguiente.gif) no-repeat bottom;
+	}
+a.mteDateProx span{
+	display: none;
+	}
+span.mteDateToday{
+	font-weight: bold; color: #b99;
+	}
+span.mteDateSelected{
+	font-weight: bold;
+	}

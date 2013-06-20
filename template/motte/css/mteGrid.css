@@ -1,0 +1,123 @@
+/* mteGrid ######################### */
+div.mteGrid{
+	clear: both;
+	width: 680px;
+	margin: 0px auto;
+	}
+div.mteGrid table{
+	margin: 0px auto;
+	border: none; border-spacing: 0px; border-right: 1px solid #999; border-bottom: 1px solid #999;
+	}
+div.mteGrid th{
+	border: 1px solid;
+	border-color: #ACB6BD #727E89 #bbb #ACB6BD;
+	background-color: #315B78;	background: url(../img/pg_sup_fnd.gif) repeat-x bottom;
+	font-family: verdana,sans-serif; font-size: 9px; color: #D2DCE3;
+	text-align: center; font-weight: normal;
+	padding: 2px 15px 2px 15px;
+	}
+div.mteGrid th a{
+	padding: 0px 15px 0px 15px;
+	display: block;
+	color: #fff;
+	}
+div.mteGrid th a:hover{
+	color: #bbb;
+	}
+th.mteGridTitle{
+	padding-right: 0px !important;
+	height: 20px !important;
+	font-weight: bold !important;
+	border-bottom: none !important; border-top: none !important; 
+	}
+th.mteGridTitle a{
+	float: right;
+	margin-top: -15px; padding: 0px !important;
+	display: block;
+	width: 23px; height: 17px;
+	background: url(../img/ico_salir.gif) no-repeat transparent;
+	}
+th.mteGridTitle span{
+	display: none;
+	}
+div.mteGrid tr{
+	background-color: #f6f6f6;
+	}
+div.mteGrid tr:hover{
+	background-color: #fff;
+	}
+div.mteGrid td{
+	padding: 0px; padding-left: 2px;
+	border-left: 1px solid #ddd; border-top: 1px solid #ddd;
+	font-size: 10px;
+	}
+div.mteGrid tfoot td{
+	background-color: #eee;
+	}
+div.mteGrid tfoot div.mteLegend{
+	margin: 0px !important;
+	height: 12px !important;
+	}
+/* orden */
+a.mteGridTitleOrderASC{
+	background: url(../img/ico_orden_asc.gif) transparent right no-repeat;
+	}
+a.mteGridTitleOrderDESC{
+	background: url(../img/ico_orden_desc.gif) transparent right no-repeat;
+	}
+/* tipos */
+div.mteGrid td.T{
+	/* texto */
+	text-align: left;
+	}
+div.mteGrid td.N{
+	/* numero */
+	text-align: right;
+	padding-right: 4px;
+	}
+div.mteGrid td.D{
+	/* fecha */
+	text-align: center;
+	}
+div.mteGrid td.X{
+	/* centrado */
+	text-align: center;
+	}
+div.mteGrid td.B{
+	/* booleano */
+	text-align: center;
+	}
+
+/* acciones */
+td.mteGridAction{
+	width: 60px; height: 20px;
+	padding-left: 2px;
+	}
+td.mteGridAction span{
+	display: none;
+	}
+td.mteGridAction a{
+	float: left;
+	display: block;
+	margin-left: 2px; margin-right: 2px;
+	width: 15px; height: 15px;
+	opacity:0.4; -moz-opacity:0.4; filter: alpha(opacity=40);
+	}
+td.mteGridAction a:hover{
+	opacity:1; -moz-opacity:1; filter: alpha(opacity=100);
+	}
+a.mteGridActionView{
+	background: url(../img/ico_ver.gif) no-repeat transparent;
+	}
+a.mteGridActionEdit{
+	background: url(../img/ico_editar.gif) no-repeat transparent;
+	}
+a.mteGridActionDelete{
+	background: url(../img/ico_eliminar.gif) no-repeat transparent;
+	}
+a.mteGridActionReset{
+	background: url(../img/ico_llave.gif) no-repeat transparent;
+	}
+a.mteGridActionForm{
+	background: url(../img/ico_ficha.gif) no-repeat transparent;
+	}

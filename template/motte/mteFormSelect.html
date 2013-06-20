@@ -1,0 +1,9 @@
+<label>
+	<span>{$TITLE}</span>
+	<select name="{$NAME}" {if $READ_ONLY}disabled="disabled"{/if}>
+		{html_options options=$OPTIONS selected=$VALUE}
+	</select>
+</label>
+{if $HELP != ''}
+	<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+{/if}

@@ -1,0 +1,11 @@
+<label class="mteFormCheckbox">
+	<span>{$TITLE}</span>
+	 {if !$READ_ONLY}
+		<input type="checkbox" name="{$NAME}" {if $VALUE == 1}checked="checked"{/if} />
+	{else}
+		<div class="mteFormTextLabel">{if $VALUE == 1}{$LABEL_CHECKED}{else}{$LABEL_UNCHECKED}{/if}</div>
+	{/if}
+	{if $HELP != ''}
+		<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+	{/if}	
+</label>

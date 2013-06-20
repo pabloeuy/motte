@@ -1,0 +1,15 @@
+<label class="mteFormFile">
+	<span>{$TITLE}</span>
+	{if !$READ_ONLY} 
+		<input type="file" name="{$NAME}" size="{$SIZE}" {if $VALIDATE}class="mteFormsValidateInput"{/if} autocomplete="off" />
+	{/if}
+</label>
+{if $URL != ''}
+	<div class="mteFormFileExtra">
+		<a href="{$URL}" target="_blank" title="Click to view file"><span>{$FILE_NAME}</span></a>
+		{if !$READ_ONLY}Remove: <input type="checkbox" name="{$NAME}_remove" value="1" title="Check this option if you want to remove this file." />{/if}
+	</div>
+{/if}
+{if $HELP != ''}
+	<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+{/if}

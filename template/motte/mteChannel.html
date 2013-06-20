@@ -1,0 +1,8 @@
+<div id="mteChannels">
+	<h4><span>Channels</span></h4>
+	<ul>
+	{foreach from=$CHANNELS item=thisChannel}
+		<li id="mteChannel{$thisChannel.key}"><a {if $thisChannel.target != ''}target="{$thisChannel.target}"{/if} href="{$thisChannel.link}"><span>{$thisChannel.title}</span></a></li>
+	{/foreach}
+	</ul>
+</div>

@@ -1,0 +1,11 @@
+<label>
+	<span>{$TITLE}</span>
+	{if !$READ_ONLY}
+		<input type="text" name="{$NAME}" size="{$SIZE}" maxlength="{$MAX}" value="{$VALUE}" {if $VALIDATE}class="mteFormsValidateInput"{/if} autocomplete="off" />
+	{else}
+		<div class="mteFormTextLabel">{$VALUE}</div>
+	{/if}
+	{if $HELP != ''}
+		<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+	{/if}
+</label>

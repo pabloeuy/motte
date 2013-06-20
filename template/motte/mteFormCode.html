@@ -1,0 +1,15 @@
+<label>
+	<span>{$TITLE}</span>
+    <input type="hidden" name="{$NAME}" value="{$VALUE}">
+	{if !$READ_ONLY}
+		<input type="text" id="{$NAME}" name="SEARCH_{$NAME}" size="{$SIZE}" maxlength="{$MAX}"
+               value="{$VALUE_SEARCH}" autocomplete="off"
+               {if $VALIDATE}class="mteFormsValidateInput"{/if}
+               />
+	{else}
+		<div class="mteFormTextLabel">{$VALUE_SEARCH}</div>
+	{/if}
+	{if $HELP != ''}
+		<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+	{/if}
+</label>

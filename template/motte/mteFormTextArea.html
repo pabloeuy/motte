@@ -1,0 +1,11 @@
+<label>
+	<span>{$TITLE}</span>
+	{if !$READ_ONLY}
+		<textarea name="{$NAME}" rows="{$ROWS}" cols="{$COLS}" {if $VALIDATE}class="mteFormsValidateInput"{/if} autocomplete="off">{$VALUE}</textarea>
+	{else}
+		<div class="mteFormTextLabel">{$VALUE|nl2br}</div>
+	{/if}
+</label>
+{if $HELP != ''}
+	<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+{/if}

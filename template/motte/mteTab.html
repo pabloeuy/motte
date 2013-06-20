@@ -1,0 +1,12 @@
+<div class="mteTab">
+	<ul>
+	{foreach from=$TABS item=tab}
+		<li {if $tab.selected}class="mteTabSelected"{/if}><a href="{$tab.link}"><span>{$tab.title}</span></a></li>
+	{/foreach}
+	</ul>
+	<div class="mteTabBody">
+		<div class="mteTabContent">
+			{$CONTENT}
+		</div>
+	</div>
+</div>

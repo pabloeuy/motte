@@ -1,0 +1,50 @@
+/* mteTab ######################### */
+div.mteTab{
+	width: 95%;
+	margin: 0px auto;
+	}
+div.mteTab ul{
+	margin-left: 5px;
+	list-style-type: none;
+	}
+div.mteTab li{
+	float: left;
+	margin-right: 5px;
+	}
+div.mteTab li a{
+	display: block;
+	padding: 2px 8px 2px 8px;
+	border: 1px solid;
+	border-color: #cdd2d4 #7f878a #a9afb1 #cdd2d4;
+	background-color: #a9afb1;
+	color: #fff; font-family: verdana, sans; font-size: 9px;
+	}
+div.mteTab li a:hover, div.mteTab li a:focus{
+	background-color: #9ba3ab;
+	border-color: #9cb5bd #2b5661 #87949f #9cb5bd !important;
+	}
+li.mteTabSelected a{
+	background-color: #87949f !important;
+	border-color: #9cb5bd #2b5661 #87949f #9cb5bd !important;
+	}
+div.mteTabBody{
+	clear: left;
+	padding: 5px;
+	background-color: #87949f;
+	}
+div.mteTabContent{
+	min-height: 160px;
+	border: 1px solid; border-color: #2b5661 #9cb5bd #9cb5bd #2b5661;
+	background-color: #fff;
+	}
+
+div.mteTabContent div.mteForm{
+	width: 100%;
+	}
+div.mteTabContent div.mteForm legend span{
+	width: 680px;
+	}
+div.mteTabContent div.mteGridNav{
+	margin-top: 15px;
+	}
+	

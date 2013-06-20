@@ -1,0 +1,230 @@
+/* mteForm ######################### */
+div.mteForm{
+	padding-top: 10px;
+	clear: both;
+	margin: 0px auto;
+	width: 500px;
+	}
+div.mteForm fieldset{
+	padding-bottom: 8px;  
+	background-color: #e8e8e8;
+	}
+div.mteForm legend{
+	padding-top: 3px;
+	border: 1px solid; border-color: #ACB6BD #727E89 #bbb #ACB6BD; border-top: none;
+	background-color: #315B78;	background: url(../img/pg_sup_fnd.gif) repeat-x bottom;	
+	font-family: verdana, sans-serif; font-size: 9px; color: #D2DCE3; font-weight: bold; text-align: center;
+	}
+div.mteForm legend span{
+	display: block;
+	height: 17px;
+	width: 500px;
+	}
+div.mteFormClose a{
+	display: block;
+	float: right;
+	margin-top: -21px;
+	display: block;
+	width: 23px; height: 17px;
+	background: url(../img/ico_salir.gif) no-repeat transparent;
+	}
+div.mteFormClose span{
+	display: none !important;
+	}
+
+div.mteFormSubtitle{
+	clear:both;
+	font-family: tahoma, verdana, sans-serif; font-size: 11px; color: #333; font-weight: bold; text-align: center;
+	padding-top: 30px; 
+	padding-bottom: 15px;
+	}
+
+div.mteFormDescription{
+	font-family: tahoma, verdana, sans-serif; font-size: 8px; color: #333; font-weight: bold; text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top: 1px solid #315B78;
+	border-bottom: 1px solid #315B78;
+	}
+
+div.mteForm label{
+	clear: both;
+	display: block;
+	margin-top: 5px;
+	}
+div.mteForm label span{
+	display: block;
+	float: left;
+	margin-right: 5px; padding-top: 4px;
+	width: 120px;
+	text-align: right; font-family: verdana, sans; font-size: 9px;
+	}
+
+div.mteForm input, div.mteForm select.mteFormSelect, div.mteForm textarea.mteFormTextArea{
+	float: left;
+	border: 1px solid #bbb;
+	background-color: #f6f6f6;
+	font-family: tahoma, verdana, sans-serif; font-size: 10px;
+	}
+div.mteForm input:hover, div.mteForm select:hover, div.mteForm textarea:hover{
+	background-color: #fff;
+	}
+div.mteForm input:focus, div.mteForm select:focus, div.mteForm textarea:focus{
+	color: #000;
+	background-color: #fff;
+	border: 1px inset;
+	}
+div.mteForm input, div.mteForm textarea.mteFormTextArea{
+	padding: 2px;
+	}
+div.mteForm option{
+	margin-top: 2px;
+	}
+label.mteFormFile{
+	clear: left;
+	padding-top: 4px; padding-bottom: 4px;
+	}
+label.mteFormFile input{
+	float: left;
+	}
+div.mteFormFileExtra{
+	float: right;
+	padding-right: 10px;
+	width: 150px;
+	text-align: right;
+	}
+div.mteFormFileExtra input, div.mteFormFileExtra input:focus, div.mteFormFileExtra input:hover{
+	background: none;
+	border: none;
+	cursor: pointer;
+	}
+label.mteFormImage{
+	clear: left;
+	padding-top: 4px; padding-bottom: 4px;
+	}
+label.mteFormImage input{
+	float: left;
+	}
+div.mteFormImageExtra{
+	float: left;
+	border: 1px;
+	padding-right: 10px;
+padding-left: 10px;
+	
+	width: 150px;
+	text-align: left;
+	}
+div.mteFormImageExtra input, div.mteFormImageExtra input:focus, div.mteFormImageExtra input:hover{
+	background: none;
+	border: none;
+	cursor: pointer;
+	}
+label.mteFormCheckbox input, label.mteFormCheckbox input:focus, label.mteFormCheckbox input:hover{
+	border: none; background: none;
+	cursor: pointer;
+	}
+label.mteFormSubmit{
+	float: right;
+	margin-right: 5px; padding-top: 15px;
+	width: 120px;
+	text-align: right;
+	}
+label.mteFormSubmit input{
+	padding: 0px; padding-right: 15px; padding-left: 15px;
+	border-style: solid; border-width: 1px; border-color: #fff #333 #333 #fff;
+	background-color: #315B78;	background: url(../img/pg_sup_fnd.gif) repeat-x bottom;	
+	color: #D2DCE3; font-size: 7pt; font-weight: bold;
+	cursor: pointer;
+	}
+label.mteFormSubmit input:hover, label.mteFormSubmit input:focus{
+	color: #fff;
+	}
+
+input.mteFormsValidateInput, select.mteFormsValidateInput, textarea.mteFormsValidateInput{
+	background: url(../img/ico_validar.gif) no-repeat right top;
+	}
+.pgFormsValidateCorrect{
+	border: 1px solid #d99 !important;
+	background-color: #fffdf9 !important;
+	}
+div.mteFormTextLabel{
+	float: left;
+	padding: 1px; padding-left: 2px; padding-right: 10px; margin-bottom: 4px !important;
+	max-width: 320px; min-height: 15px; /* mtePage_ie.css*/
+	border: 1px solid #bbb;
+	background-color: #f6f6f6;
+	font-family: tahoma, verdana, sans-serif; font-size: 10px; font-style: italic; color: #333; 
+	cursor: default;
+	}
+	
+span.mceMenuButton, span.mceMenuButtonFocus{
+	width: 25px !important;
+	margin: 0px; padding: 0px;
+	margin-rigth: 2px;
+}
+	
+/**
+ * Autocomplete
+ */
+#ajax_listOfOptions{
+	position: absolute;
+	width: 175px; height: 120px;
+	overflow: auto;
+	border-left: 1px solid #84969c; border-right: 1px solid #84969c;
+	background-color: #adb6bd;
+	text-align: left; font-size: 10px; color: #fff;
+	z-index: 100;
+	}
+#ajax_listOfOptions div{
+	margin:1px; padding:2px;
+	border-bottom: 1px solid #cecfd6;
+	font-size:0.9em;
+	cursor:pointer;
+}
+#ajax_listOfOptions .optionDiv{
+	
+	}
+#ajax_listOfOptions .optionDivSelected{
+	background-color: #bdc7ce;
+	color: #848a8c;
+	}
+#ajax_listOfOptions_iframe{
+	background-color:#F00;
+	position:absolute;
+	z-index:5;
+	}
+
+/**
+ * Ayuda
+ */
+a.mteFormHelp{
+	display: block;
+	float: left;
+	width: 20px; height: 18px;
+	background: url(../img/ico_ayuda.gif) no-repeat 4px 3px;
+	}
+a.mteFormHelp span{
+	display: none !important;
+	}
+
+div.mteFormHelpCont{
+	float: right;
+	width: 200px; 
+	padding: 10px; margin-top: -15px; margin-right: -230px;
+	border: 1px solid #ae8c49;
+	background-color: #fff8d1;
+	color: #5e4e30;
+	z-index: 400 !important;
+	}
+div.mteFormHelpCont a{
+	display: block;
+	position: absolute;
+	margin-left: 198px; margin-top: -10px;
+	width: 15px; height: 15px;
+	font-size: 12px; font-weight: bold;
+	}
+
+
+
+
+

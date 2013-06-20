@@ -1,0 +1,22 @@
+<div class="mteForm">
+{if $WARNING != ''}<div class="mteWarning">{$WARNING|nl2br}</div>{/if}
+{if $NOTIFY != ''}<div class="mteNotify">{$NOTIFY|nl2br}</div>{/if}
+<form name="{$NAME}" method="POST" action="{$POST}" enctype="multipart/form-data">
+	<fieldset>
+        <input name="mteNeedConfirm" type="hidden" value="{$CONFIRMATION}">
+        <input name="mteConfirmMsg" type="hidden" value="{$CONFIRMATION_MSG}">
+		{if $TITLE != '' || $CLOSE != ''}
+			<legend>
+				<span>{$TITLE}</span>
+				{if $CLOSE != ''}
+					<div class="mteFormClose"><a href="{$CLOSE}" title="{$CLOSETAG}"><span>{$CLOSETAG}</span></a></div>
+				{/if}
+			</legend>
+		{/if}
+		{if $SUBTITLE != ''}
+			<div class="mteFormSubtitle">{$SUBTITLE}</div>
+		{/if}
+		{$FIELDS}
+	</fieldset>
+</form>
+</div>

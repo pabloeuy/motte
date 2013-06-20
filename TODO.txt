@@ -1,0 +1,30 @@
+/**
+ * TO-DO List
+ *
+ * @filesource
+ * @package    motte
+ * @version    1.0
+ * @license    http://opensource.org/licenses/gpl-license.php GPL - GNU Public license
+ * @author     Pedro Gauna (pgauna@gmail.com) /
+ *             Carlos Gagliardi (carlosgag@gmail.com) /
+ *             Mauro Dodero (maurodo@gmail.com) /
+ *             Pablo Erartes (pabloeuy@gmail.com) /
+ *             GBoksar/Perro (gustavo@boksar.info)
+ * @link       http://motte.codigolibre.net Motte Website
+ */ 
+
+Classes:
+    * src/misc/mteImage.class.php (GB)
+        * Re-Thought - Preserve actual functionality!
+
+Documentation(PHPdoc based):
+     * Generated 25/Set/07 (Perro)
+       * Problems on comments (@params and @return with no arguments!)
+
+Database connections:
+     * driver sql lite (Developed by Carlos) Not TESTED!
+     * driver informix (Abandoned) Any volunteers?
+
+Internationalization:
+	- br: Anahuac De Paula Gil <anahuac@anahuac.biz> (JeguePanel <http://www.jeguepanel.net>)
+	- es: GBoksar/Perro <gustavo@boksar.info> (<http://www.boksar.info>)

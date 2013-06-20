@@ -1,0 +1,8 @@
+<label>
+	<span>{$TITLE}</span>
+	<input type="text" name="{$NAME}" size="{$SIZE}" maxlength="{$MAX}" value="" {if $VALIDATE}class="mteFormsValidateCaptcha"{/if} autocomplete="off" />
+	<input type="hidden" name="answer" value="{$VALUE}" />
+	{if $HELP != ''}
+		<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+	{/if}
+</label>

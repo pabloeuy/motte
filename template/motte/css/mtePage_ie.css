@@ -1,0 +1,25 @@
+/**
+ * Corrige bugs e incompatibilidades de Basura Explorer
+ */
+body{
+	behavior: url('motte/template/motte/css/csshover2.htc');
+	}
+
+div.mteForm legend{
+	margin-left: -7px; margin-right: -7px;
+	}
+div.mteFormTextLabel{
+	height: 15px;
+	}
+div.mteTabContent{
+	height: 120px;
+	}
+div.mteGrid table{
+	border-collapse: collapse;
+	}
+div.mteFormDateContainer{
+	margin-left: 0px !important;
+	}
+ #mteContent{
+	_height: 300px;
+	}

@@ -1,0 +1,115 @@
+#pageLogin{
+	margin: 0px auto; margin-top: 20px;
+	width: 480px;
+}
+#pageLogin table{
+	width: 480px;
+}
+#pageLogin td.tag{
+	text-align: right;
+}
+#pageLogin td.send{
+	border: 0px;
+	background-color: #eee;
+}
+#pageLogin img{
+	margin-left: 40px; margin-right: 10px;
+}
+#pageLogin #error{
+	color: #b97878; font-weight: bold; font-size: 7pt;
+}
+#pageLogin #title{
+	text-align: center; color: #005278; font-weight: bold; font-size: 12pt;
+}	
+
+/* Padlock Settings for Ajax login */
+
+#mtePadlock {
+	height: 87px;
+	width: 83px;
+	margin-left: 40px;
+	margin-top: -10px;
+}
+
+#mtePadlock.NoLogin {
+	background: url('../img/ico_padlock_closed.gif') no-repeat transparent;
+}
+#mtePadlock.Login {
+	background: url('../img/ico_padlock_open.gif') no-repeat transparent;
+}
+
+/*
+* Form
+*/
+div.loginForm{
+	width: 480px;
+	height: 400px;	
+	margin: 0px auto;
+}
+div.loginForm table{
+	position: relative;
+	margin-top: 20%;
+	width: 100%;
+	border-spacing: none; border-collapse: collapse;
+}
+div.loginForm th{
+	background-color: #ddd;
+	padding: 5px 15px 5px 15px;
+	color: #666;
+}
+div.loginForm td{
+	background-color: #eee;
+	padding: 3px;
+	color: #666;
+}
+div.loginForm td.title{
+	text-align: right; vertical-align: top;
+	width: 35%;
+}
+div.loginForm td.send{
+	background-color: #eee;
+	text-align: center;
+}
+div.loginForm input.button{
+	width: 100px; height: 20px;
+	margin: 3px; padding: 2px 6px 2px 6px;
+	background-color: #5478ac;
+	background-color: #005278;
+	border: none;
+	font-size: 7pt; color: #fff; font-weight: bold;
+	cursor: pointer; _cursor: hand;
+	}
+div.loginForm input.button:hover{
+	color: #def;
+	background-color: #0092b8;
+	}
+div.loginForm input.nothing{
+	background: none;
+	border: none;
+	cursor: pointer;
+	}
+div.loginForm #quit{
+	position: relative;
+	float: right;
+	top: -5px; right: -8px;
+	}
+div.loginForm #quit a{
+	display: block;
+	width: 21px; height: 15px;
+	background: url(../img/ico_cerrar.gif) no-repeat transparent;
+	}
+div.loginForm #quit span{
+	display: none;
+	}
+input.corregirTexto, textarea.corregirTexto, input.corregirNumero{
+	border: 1px solid #d99 !important;
+	background-color: #fff;
+	}
+input.corregirNumero{
+	color: #d66 !important;
+	}
+
+div.loginForm img.image{
+	float: left;
+	margin-right: 10px;
+	}

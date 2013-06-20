@@ -1,0 +1,64 @@
+<div class="mteGridNav">
+
+	{if $ACTION}
+	<div class="mteGridNavActions">
+		{foreach from=$ACTIONS item=thisAction}
+			<a href="{$thisAction.link}" class="mteGridNav{$thisAction.name}"><span>{$thisAction.name}</span></a>
+		{/foreach}
+	</div>
+	{/if}
+
+	<div class="mteGridNavFilters">
+	{if $FILTER == 1}
+	<form name="{$NAME}" method="post" action="{$FILTER_URL}">
+	<fieldset>
+		<legend>Record navigation</legend>
+		<label>
+			<span>Field</span>
+			<select name="mteGridNavField">
+				{foreach from=$FILTER_FIELDS item=thisOption}
+					<option value="{$thisOption.name}" {if $thisOption.name == $FILTER_SEL}selected="selected"{/if}>{$thisOption.title}</option>
+				{/foreach}
+			</select>
+		</label>
+		<label>
+			<span>Text to search</span>
+			<input type="text" name="mteGridNavKeyword" value="{$FILTER_KEYWORD}" />
+		</label>
+		<label class="mteGridNavSubmit">
+			<input type="submit" name="mteGridNavSearch" value="&nbsp;" title="{$APPLY_FILTER_TAG}" />
+		</label>
+		{if $FILTER_KEYWORD != ''}
+			<a href="{$FILTER_URL}" title="{$REMOVE_FILTER_TAG}"><span>{$REMOVE_FILTER_TAG}</span></a>
+		{/if}
+	</fieldset>
+	</form>
+	{else}
+		&nbsp;
+	{/if}
+	</div>
+
+	<div class="mteGridNavPages">
+	<form name="{$NAME}Pages" method="post" action="{$PAGES_URL}">
+	<fieldset>
+		<legend>Pages</legend>
+		<a href="{$PAGES_URL_FIRST}" class="mteGridNavPagesFirst" title="{$FIRST_PAGE_TAG}"><span>{$FIRST_PAGE_TAG}</span></a>
+		<a href="{$PAGES_URL_PREV}" class="mteGridNavPagesPrev" title="{$PREV_PAGE_TAG}"><span>{$PREV_PAGE_TAG}</span></a>
+		<label>
+			<span>Ir a la p&aacute;gina:</span>
+			<select name="mteGridNavPage">
+				{foreach from=$PAGES item=thisPage}
+					<option value="{$thisPage.value}" {if $thisPage.name == $PAGE}selected="selected"{/if}>{$thisPage.name}</option>
+				{/foreach}
+			</select>
+		</label>
+		<label class="mteGridNavPagesSubmit">
+			<input type="submit" name="mteGridNavPagesSearch" value="{$APPLY_TAG}" />
+		</label>
+		<a href="{$PAGES_URL_NEXT}" class="mteGridNavPagesNext" title="{$NEXT_PAGE_TAG}"><span>{$NEXT_PAGE_TAG}</span></a>
+		<a href="{$PAGES_URL_LAST}" class="mteGridNavPagesLast" title="{$LAST_PAGE_TAG}"><span>{$LAST_PAGE_TAG}</span></a>
+	</fieldset>
+	</form>
+	</div>
+
+</div>

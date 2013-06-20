@@ -1,0 +1,42 @@
+<div id="pageLogin">
+	<div class="loginForm">
+		<form name="frm_login" method="post" action="{$SCRIPT_POST}">
+			<input type="hidden" name="LOGIN" value="LOGIN">
+			<input type="hidden" name="URLAJAX" value="{$URLAJAX}">
+			<input type="hidden" name="SESSION" value="{$SESSION}">
+			<input type="hidden" name="EMPTYFIELDS" value="{$EMPYFIELDS}">
+			<input type="hidden" name="SEARCHING" value="{$SEARCHING}">
+			<input type="hidden" name="PROBLEMS" value="{$PROBLEMS}">
+			<input type="hidden" name="NOLOGIN" value="{$NOLOGIN}">
+			<table>
+				<tr>
+					<th colspan="3">{$TITLE_TAG}</th>
+				</tr>
+				<tr>
+					<td rowspan="6"><div id="mtePadlock" class="NoLogin">&nbsp;</div></td>
+					<td colspan="2"><div id="error">&nbsp;</div></td>
+				</tr>
+				<tr>
+					<td class="tag">{$USER_TAG}</td>
+					<td><input type="text" name="USERNAME" size="15" maxlenght="15" autocomplete="off" /></td>
+				</tr>
+				<tr>
+					<td class="tag">{$PASS_TAG}</td>
+					<td><input type="password" name="PASSWD" size="15" maxlenght="15" autocomplete="off" /></td>
+				</tr>
+				<tr>
+					<td class="send" colspan="2">
+						<input type="submit" name="send" value="{$SUBMIT_TAG}" class="button" /><br>
+					</td>
+				 </tr>
+				<tr>
+					<td align="right" colspan="2">{if $URLPASSWORD != ''}<a href="{$URLPASSWORD}">{$FORGOT_TAG}</a>{/if}</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+			<br />
+		</form>
+	</div>	
+</div>

@@ -1,0 +1,19 @@
+<div class="mteMenu">
+<h4><span>{$TITLE}</span></h4>
+<ul>
+{foreach from=$OPTIONS item=thisOption}
+	<li>	
+		<a href="{$thisOption.link}"><span>{$thisOption.title}</span></a>
+		<ul>
+                {foreach from=$thisOption.subOptions item=subOption}
+                {if $subOption.title == '-'}
+					<li>&nbsp;</li>
+				{else}	
+					<li {if $subOption.selected}class="mteMenuSelected"{/if}><a href="{$subOption.link}" class="mteSubMenu"><span>{$subOption.title}</span></a></li>
+				{/if}
+		{/foreach}
+		</ul>	
+	</li>
+{/foreach}
+</ul>
+</div>

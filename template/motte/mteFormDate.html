@@ -1,0 +1,17 @@
+<label>
+	<span>{$TITLE}</span>
+		<div class="mteFormDateSelect">
+		{if !$READ_ONLY}
+			{html_select_date prefix=$NAME start_year=$START_YEAR end_year=$END_YEAR month_format=%m field_order=YMD month_value_format=%m time=$VALUE year_extra="class=\"mteFormDateChange('$NAME')\"" month_extra="class=\"mteFormDateChange('$NAME')\"" day_extra="class=\"mteFormDateChange('$NAME')\""}
+			<input type="hidden"  name="{$NAME}" value="{$VALUE}" />
+		
+			<a href="javascript:;" name="mteDate('{$NAME}')" class="mteFormDateLink"><span>[seleccionar]</span></a>
+			<div id="mteFormDateSelect_{$NAME}" class="mteFormDateContainerHidden"></div>
+		{else}
+			<div class="mteFormTextLabel">{$VALUE|date_format:$FORMAT}</div>
+		{/if}
+		</div>
+		{if $HELP != ''}
+			<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+		{/if}		
+</label>

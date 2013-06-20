@@ -1,0 +1,9 @@
+<label>
+	<span>{$TITLE}</span>
+	<select name="{$NAME}" size="{$SIZE}" multiple="multiple" title="[Ctrl] or [Shift] to choose more than one option" {if $READ_ONLY}disabled="disabled"{/if}>
+		{html_options options=$OPTIONS selected=$SELECTED}
+	</select>
+</label>
+{if $HELP != ''}
+	<a href="#" class="mteFormHelp" title="{$HELPTITLE}"><span>{$HELP}</span></a>
+{/if}

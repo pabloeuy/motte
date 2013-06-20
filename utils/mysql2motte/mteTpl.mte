@@ -1,0 +1,296 @@
+<?php
+/**
+* @filesource
+* @author @AUTHOR
+* @url @URL
+* @package @PACKAGE
+* @subpackage model
+* @version @VERSION
+* @license @LICENSE
+*
+* Last update: @DATE
+*
+* @Customized true
+*
+* @TBLSTRUCT
+*
+*/
+
+/**
+ *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *                       I N C L U D E S
+ *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+@INCLUDES
+
+/**
+* Clase para manejar Tabla tbl_@TABLE
+*
+*/
+class tbl_@TABLE extends mteTableSql{
+	/**
+	 * Table Comment
+	 *
+	 * @var string
+	 * @access private
+	 */
+	private $_tableComment;
+
+	/**
+	 * Constructor
+	 *
+	 * @param mteCnxMySql $engine
+	 * @access public
+	 * @return tbl_@TABLE
+	 */
+	public function __construct($engine) {
+		// Invoking parent constructor
+	        parent::__construct('@TABLE', $engine, false);
+
+		$this->setFieldsKey('@FIELDKEY');
+		$this->setFields('@FIELDLIST');
+
+		$this->setTableComment("@TABLE"); // Replace this value for a more user-friendly description
+	}
+
+	/**
+	* Destructor
+	*
+	* @access public
+	*/
+	public function __destruct(){
+	}
+
+	/**
+	 *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	 *                   C L A S S   M E T H O D S
+	 *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	 */
+
+	/**
+	* Set table comment
+	*
+	* @access public
+	* @param string $comment
+	*/
+	public function setTableComment($comment){
+		$this->_tableComment = $comment;
+	}
+
+	/**
+	* Get table comment
+	*
+	* @access public
+	* @return string
+	*/
+	public function getTableComment(){
+		return $this->_tableComment;
+	}
+
+	/**
+	 * Checking record and fields values
+	 *
+	 * @access private
+	 * @param array $record
+	 */
+	private function _ctrRecord($record){
+		@CTR
+	}
+
+	/**
+	 * Returns default Id
+	 *
+	 * @access public
+	 * @param array $record
+	 */
+	public function getDefaultId(){
+		return 0;
+	}
+
+	/**
+	 * Create select
+	 *
+	 * @access public
+	 * @param string $fieldName
+	 * @param string $where
+	 * @param string $order
+	 * @return array
+	 */
+	public function createSelect($fieldName, $where = '', $order = ''){
+		$result = array();
+
+		return $result;
+	}
+
+	/**
+	 * Returns select data
+	 *
+	 * @access public
+	 * @param string $where
+	 * @param string $order
+	 * @return array
+	 */
+	public function getSelectData($where = '', $order = ''){
+		$result = array();
+
+		return $result;
+	}
+
+	/**
+	 *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	 *             M O T T E   E V E N T S   H A N D L I N G
+	 *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	 */
+
+	/**
+	 * When new record is created
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function onNewRecord(&$record){
+		// Inicialize Error management
+		$this->clearErrorExec();
+		
+		@INICIALIZE
+		
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('while initializing data in').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+	/**
+	 * Things to do before inserting record to DB
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function beforeInsert(&$record){
+		// Inicialize error management
+		$this->clearErrorExec();
+
+		// Data control
+		$this->_ctrRecord($record);
+
+		@SERIAL
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('when inserting new record in').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+	/**
+	 * After inserting a record to DB
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function afterInsert(&$record){
+		// Inicialize error management
+		$this->clearErrorExec();
+
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('after inserting new record in').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+	/**
+	 * Before updating a record
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function beforeUpdate(&$record){
+		// Inicialize error management
+		$this->clearErrorExec();
+
+		// Data control
+		$error = $this->_ctrRecord($record);
+
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('when updating record data of').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+	/**
+	 * After updating a record
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function afterUpdate(&$record){
+		// Inicialize error management
+		$this->clearErrorExec();
+
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('after updating record data of').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+	/**
+	 * Before deleting a record
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function beforeDelete(&$record){
+		// Inicialize error management
+		$this->clearErrorExec();
+		@CTRI
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('when deleting a record of').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+	/**
+	 * After deleting a record
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function afterDelete(&$record){
+		// Inicialize error management
+		$this->clearErrorExec();
+
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('after deleting a record of').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+	/**
+	 * Before get record
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function beforeGetRecord(&$record){
+	}
+
+	/**
+	 * After get record
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function afterGetRecord(&$record){
+	}
+
+	/**
+	 * Calculated fields
+	 *
+	 * @access public
+	 * @param array $record
+	 * @return string
+	 */
+	public function onCalcFields(&$record){
+		// Inicialize error management
+		$this->clearErrorExec();
+
+		// Returns
+		return $this->parseErrorExec($this->getLiteralError().__('on generating calculated fields for').' '.$this->getTableComment().":", __('Please verify'),"\n");
+	}
+
+@FUNCSERIAL
+}
+?>
