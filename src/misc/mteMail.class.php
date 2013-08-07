@@ -41,6 +41,7 @@
             $this->_mail->SMTPSecure = MTE_MAIL_SMTP_SECURE;
             $this->_mail->AuthType   = MTE_MAIL_AUTHTYPE;
             $this->_mail->Auth       = MTE_MAIL_AUTH;
+            $this->_mail->SMTPDebug  = MTE_MAIL_SMTP_DEBUG;
             $this->_mail->AddReplyTo(MTE_MAIL_REPLYTO_ADDRESS, MTE_MAIL_REPLYTO_NAME);
 
             switch($this->_mail->mailer) {

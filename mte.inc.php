@@ -251,6 +251,10 @@ if (!defined('MTE_MAIL_AUTHTYPE')) {
     define('MTE_MAIL_AUTHTYPE','LOGIN');
 }
 
+if (!defined('MTE_MAIL_SMTP_DEBUG')) {
+    define('MTE_MAIL_SMTP_DEBUG', false);
+}
+
 /**
  * mteExport values
  *
