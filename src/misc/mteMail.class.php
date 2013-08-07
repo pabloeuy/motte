@@ -31,13 +31,16 @@
             $this->_cc   = array();
             $this->_bcc  = array();
 
-            $this->_mail->mailer   = MTE_MAIL_SEND_METHOD;
-            $this->_mail->FromName = MTE_MAIL_FROM_NAME;
-            $this->_mail->From     = MTE_MAIL_FROM_ADDRESS;
-            $this->_mail->Username = MTE_MAIL_SMTP_USER;
-            $this->_mail->Password = MTE_MAIL_SMTP_PASSWORD;
-            $this->_mail->Host     = MTE_MAIL_SMTP_HOST;
-            $this->_mail->Port     = MTE_MAIL_SMTP_PORT;
+            $this->_mail->mailer     = MTE_MAIL_SEND_METHOD;
+            $this->_mail->FromName   = MTE_MAIL_FROM_NAME;
+            $this->_mail->From       = MTE_MAIL_FROM_ADDRESS;
+            $this->_mail->Username   = MTE_MAIL_SMTP_USER;
+            $this->_mail->Password   = MTE_MAIL_SMTP_PASSWORD;
+            $this->_mail->Host       = MTE_MAIL_SMTP_HOST;
+            $this->_mail->Port       = MTE_MAIL_SMTP_PORT;
+            $this->_mail->SMTPSecure = MTE_MAIL_SMTP_SECURE;
+            $this->_mail->AuthType   = MTE_MAIL_AUTHTYPE;
+            $this->_mail->Auth       = MTE_MAIL_AUTH;
             $this->_mail->AddReplyTo(MTE_MAIL_REPLYTO_ADDRESS, MTE_MAIL_REPLYTO_NAME);
 
             switch($this->_mail->mailer) {

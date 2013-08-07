@@ -239,6 +239,18 @@ if (!defined('MTE_MAIL_SMTP_PORT')) {
     define('MTE_MAIL_SMTP_PORT','25');
 }
 
+if (!defined('MTE_MAIL_SMTP_SECURE')) {
+    define('MTE_MAIL_SMTP_SECURE','');
+}
+
+if (!defined('MTE_MAIL_AUTH')) {
+    define('MTE_MAIL_AUTH',false);
+}
+
+if (!defined('MTE_MAIL_AUTHTYPE')) {
+    define('MTE_MAIL_AUTHTYPE','LOGIN');
+}
+
 /**
  * mteExport values
  *
