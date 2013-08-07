@@ -91,6 +91,11 @@
             $this->_mail->AddAddress($address,$name);
         }
 
+        public function getError() {
+            return $this->_mail->ErrorInfo;
+        }
+
+
         /**
         * Add CC: destination mail address
         *
